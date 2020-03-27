@@ -1,0 +1,93 @@
+body {
+  font: 16px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+.dispenser {
+    padding: 1rem;
+}
+
+.dispenser > div {
+    padding: 1rem 0;
+    border-bottom: 1px solid #999;
+}
+
+.dispenser h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+}
+
+.dispenser h2 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+.dispenser button {
+    background-color: #FFC100;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: 0;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.dispenser button:disabled {
+    background-color: #D3D3D3;
+    color:#666;
+}
+
+.dispenser button:hover:not([disabled]) {
+    background-color: #FF9A00;
+}
+
+.dispenser .statusPanel {
+    margin-top: 3rem;
+    background-color: #EEE;
+    border: 0;
+}
+
+.dispenser .statusPanel h2,
+.dispenser .statusPanel ul {
+    padding-left: 1rem;
+}
+
+.dispenser .statusPanel ul li {
+    list-style-type: none;
+}
+
+.dispenser .statusPanel ul li span.messageHolder{
+    font-size: 0.9rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0;
+}
+
+.dispenser .statusPanel ul li span.messageHolder span {
+    font-weight: bold;
+}
+
+.dispenser .dispense {
+    margin-top: 0.5rem;
+    border: 0;
+}
+
+.dispenser .dispense button {
+    background-color: #d73e42;
+    color: #FFF;
+}
+
+.dispenser .dispense button:hover {
+    background-color: #912227;
+}
+
+.refill {
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-left:3rem;
+}
