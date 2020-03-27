@@ -29,15 +29,13 @@ class Option extends React.Component {
     if (this.props.value !== "Dispense") {
       this.refs.btn.setAttribute("disabled", "disabled");
     }
-    if (this.props.value === "Dispense") { 
-      this.callUpdateCurrentState();
-    }
   }
 
   render() {
     return (
       <button className="option" ref="btn" value={this.state.value} onClick={() => 
         { this.setState({quantity:  this.state.quantity - 1});
+          this.callUpdateCurrentState();
           this.disableButtonsAfterClick();
         }
       }
@@ -91,8 +89,8 @@ class Dispenser extends React.Component {
     };
   }
 
-  renderOption(i, j) {
-    return <Option value={i} quantity={j} />;
+  renderOption(i) {
+    return <Option value={i} />;
   }
 
   checkTeaQuantity() {
@@ -134,7 +132,7 @@ class Dispenser extends React.Component {
         <Drinks />
         <Essentials />
         <div className="dispense">
-          {this.renderOption("Dispense", '100')}
+          {this.renderOption("Dispense")}
         </div>
         <div class="statusPanel">
           <h2>Status Panel</h2>
