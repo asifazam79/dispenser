@@ -1,15 +1,14 @@
 body {
-  font: 16px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+    font: 16px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
 }
 
 .dispenser {
     padding: 1rem;
 }
 
-.dispenser > div {
-    padding: 1rem 0;
-    border-bottom: 1px solid #999;
+.dispenser form label {
+    display: none;
 }
 
 .dispenser h1 {
@@ -22,8 +21,9 @@ body {
 .dispenser h2 {
     font-size: 1.3rem;
     font-weight: normal;
-    margin: 0;
-    padding-bottom: 0.5rem;
+    margin: 1rem 0 0 0;
+    padding: 1rem 0 0.5rem 0;
+    border-top: 1px solid #999;
 }
 
 .dispenser button {
@@ -47,9 +47,11 @@ body {
 }
 
 .dispenser .statusPanel {
-    margin-top: 3rem;
+    margin-top: 1rem;
     background-color: #EEE;
     border: 0;
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .dispenser .statusPanel h2,
@@ -59,15 +61,12 @@ body {
 
 .dispenser .statusPanel ul li {
     list-style-type: none;
+    padding-bottom:0.2rem;
 }
 
-.dispenser .statusPanel ul li span.messageHolder{
-    font-size: 0.9rem;
+.dispenser .statusPanel ul li span{
     padding-bottom: 0.3rem;
     padding-left: 0;
-}
-
-.dispenser .statusPanel ul li span.messageHolder span {
     font-weight: bold;
 }
 
@@ -76,18 +75,24 @@ body {
     border: 0;
 }
 
-.dispenser .dispense button {
-    background-color: #d73e42;
-    color: #FFF;
-}
-
-.dispenser .dispense button:hover {
-    background-color: #912227;
-}
-
 .refill {
     color: #CC0000;
     font-weight: bold;
     font-size: 0.8rem;
     margin-left:3rem;
 }
+
+.dispenser form .submitButton {
+    clear: both;
+    display: block;
+    margin-top: 1.5rem;
+    background-color: #d73e42;
+    color: #FFF;
+}
+
+.dispenser form .submitButton:hover {
+    background-color: #912227;
+}
+
+  
+  
