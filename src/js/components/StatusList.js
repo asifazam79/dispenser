@@ -7,10 +7,11 @@ const mapStateToProps = state => {
 
 const ConnectedList = ({ dispense }) => (
   <ul>
-      <li key={dispense.dispenserId}>{dispense.tea}</li>
-      <li key={dispense.dispenserId}>{dispense.coffee}</li>
-      <li key={dispense.dispenserId}>{dispense.milk}</li>
-      <li key={dispense.dispenserId}>{dispense.sugar}</li>
+      {dispense.map(function(el) {
+        return ([
+          <li key={1}>{el}</li>
+        ])
+      })}
   </ul>
 );
 
